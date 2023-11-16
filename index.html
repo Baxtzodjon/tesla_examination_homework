@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_tesla_examination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <img class="tesla" class="img_tesla" src="./img/tesla.png" alt="">
+        <img class="wheels_tesla animation_wheels" width="117" height="117" src="./img/whells_tesla.png" alt="">
+        <img class="wheels_tesla2 animation_wheels" width="117" height="117" src="./img/whells_tesla.png" alt="">
+
+        <div class="texts">
+            <div class="block">
+                <p class="first_p_text">Запас хода</p>
+                <h1 class="h1_first_text">750км</h1>
+            </div>
+
+            <div class="block2">
+                <p class="second_p_text">Цена</p>
+                <h1 class="h1_second_text">$89, 990</h1>
+            </div>
+        </div>
+
+
+        <div class="examination_tesla_text">
+
+            <div class="block_display">
+                <p>Скорость автомобиля</p>
+                <div class="difficult_code">
+                    <h1 class="h1_block_display"><span id="count_animation">60</span>км/ч</h1>
+                    <div class="flex_arrow">
+                        <img onclick="increaseCount()" width="22" height="22" src="./img/arrow_up.png" alt="">
+                        <img onclick="decreaseCount()" width="22" height="22" src="./img/arrow_down.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="block_display2">
+                <p>Температура за окнами</p>
+                <div class="difficult_code2">
+                    <h1 class="h1_block_display2" id="count_animation2">20°</h1>
+                    <div class="flex_arrow">
+                        <img onclick="incCount()" width="22" height="22" src="./img/arrow_up.png" alt="">
+                        <img onclick="decCount()" width="22" height="22" src="./img/arrow_down.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="block_display3">
+                <p>Диски</p>
+                <div class="difficult_code3">
+                    <h1 class="h1_block_display3" id="count_animation3" class="color_text">19</h1>
+                    <div class="flex_arrow">
+                        <img onclick="incementCount()" class="btn_blue" id="white" width="22" height="22" src="./img/arrow_up.png" alt="">
+                        <img onclick="decrementCount()" class="btn_blue" id="space_grey" width="22" height="22" src="./img/arrow_down.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="checkbox">
+
+                <div class="flex_checkbox">
+                    <p class="p_text_checkbox">Кондиционер</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+
+                <div class="flex_checkbox">
+                    <p class="p_text_checkbox">Версия Long Range</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+
+                <div class="flex-checkbox">
+                    <p class="p_text_checkbox">Вид автомобиля</p>
+                    <label class="switch" data-open>
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+
+
+       <!--  <button data-open>open modal</button> -->
+
+        <div data-close class="modal_bg anim">
+            <div class="modal">
+                <div class="top">
+                    <img class="photo_modal" width="1240" height="697" src="./img/tesla_car_dealership.png" alt="">
+
+                    <div class="texts">
+                        <div class="block">
+                            <p class="first_p_text">Запас хода</p>
+                            <h1 class="h1_first_text">750км</h1>
+                        </div>
+            
+                        <div class="block2">
+                            <p class="second_p_text">Цена</p>
+                            <h1 class="h1_second_text">$89, 990</h1>
+                        </div>
+                    </div>
+
+                    <!-- <button data-close>x</button> -->
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- <div class="photo">
+            <img width="115" height="115" id="photo_macbook" src="./img/tesla_wheels_2.png" alt="">
+            <img width="115" height="115" id="photo_macbook2" src="./img/tesla_wheels_2.png" alt="">
+            <div class="text_macbook">
+   
+            </div>
+        </div> -->
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

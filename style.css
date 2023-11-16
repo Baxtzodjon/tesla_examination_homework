@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tesla {
+    position: relative;
+}
+
+.wheels_tesla {
+    position: absolute;
+    top: 325px;
+    left: 463px;
+    right: 0;
+    bottom: 0;
+}
+
+.wheels_tesla2 {
+    position: absolute;
+    top: 325px;
+    left: 925px;
+    right: 0;
+    bottom: 0;
+}
+
+.texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 117px;
+}
+
+.block {
+    display: block;
+}
+
+.block2 {
+    display: block;
+}
+
+.first_p_text {
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h1_first_text {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.second_p_text {
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h1_second_text {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.examination_tesla_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    padding-top: 55px;
+}
+
+.block_display {
+    display: block;
+}
+
+.block_display p {
+    color: #707070;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h1_block_display {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.block_display2 p {
+    color: #707070;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h1_block_display2 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.block_display3 p {
+    color: #707070;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h1_block_display3  {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.p_text_checkbox {
+    color: #707070;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.flex_arrow {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.difficult_code {
+    display: flex;
+    gap: 34px;
+}
+
+.difficult_code2 {
+    display: flex;
+    gap: 121px;
+}
+
+.difficult_code3 {
+    display: flex;
+    gap: 34px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 54px;
+}
+
+.flex_checkbox {
+    display: block;
+}
+
+.p_text_checkbox {
+    padding-bottom: 8px;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: #adb5bd;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #007bff;
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+}
+
+.animation_wheels {
+    animation: spin 1s linear infinite;
+}
+
+.modal_bg {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    overflow: auto;
+}
+
+.modal {
+    width: 1300px;
+    height: 1000px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    padding-top: 135px;
+    padding-left: 35px;
+}
+
+.anim {
+    animation: fade .5s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    } 
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+
+    .tesla {
+        position: relative;
+    }
+    
+    .wheels_tesla {
+        position: absolute;
+        top: 230px;
+        left: 358px;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .wheels_tesla2 {
+        position: absolute;
+        top: 230px;
+        left: 710px;
+        right: 0;
+        bottom: 0;
+    }
+}
