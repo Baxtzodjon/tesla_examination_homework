@@ -14,24 +14,28 @@ img {
     margin: 0 auto;
 }
 
-.tesla {
+.tesla_block {
     position: relative;
 }
 
 .wheels_tesla {
     position: absolute;
-    top: 325px;
-    left: 463px;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
+    margin-top: 325px;
+    margin-left: 300px;
 }
 
 .wheels_tesla2 {
     position: absolute;
-    top: 325px;
-    left: 925px;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
+    margin-top: 325px;
+    margin-left: 765px;
 }
 
 .texts {
@@ -74,6 +78,54 @@ img {
 }
 
 .h1_second_text {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.texts2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 117px;
+    padding-top: 50px;
+}
+
+.block2 {
+    display: block;
+}
+
+.block2_2 {
+    display: block;
+}
+
+.first_p_text2 {
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h1_first_text2 {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.second_p_text2 {
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h1_second_text2 {
     color: #000;
     font-size: 64px;
     font-style: normal;
@@ -133,7 +185,7 @@ img {
     line-height: normal;
 }
 
-.h1_block_display3  {
+.h1_block_display3 {
     color: #000;
     font-size: 48px;
     font-style: normal;
@@ -261,9 +313,29 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow: auto;
     padding-top: 135px;
     padding-left: 35px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 55px;
+}
+
+.colors_text {
+    color: #707070;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.photo_colors {
+    padding-top: 8px;
+    cursor: pointer;
 }
 
 .anim {
@@ -273,7 +345,7 @@ input:checked+.slider:before {
 @keyframes fade {
     from {
         opacity: 0.1;
-    } 
+    }
 
     to {
         opacity: 1;
@@ -298,20 +370,56 @@ input:checked+.slider:before {
     .tesla {
         position: relative;
     }
-    
+
     .wheels_tesla {
         position: absolute;
-        top: 230px;
-        left: 358px;
+        top: 0;
+        left: 0;
         right: 0;
         bottom: 0;
+        margin-top: 325px;
+        margin-left: 300px;
     }
-    
+
     .wheels_tesla2 {
         position: absolute;
         top: 230px;
         left: 710px;
         right: 0;
         bottom: 0;
+    }
+}
+
+.animation_wheels2 {
+    animation: spin2 1s linear infinite;
+}
+
+.wheels_tesla_first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 325px;
+    margin-left: 300px;
+}
+
+.wheels_tesla2_second {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 325px;
+    margin-left: 765px;
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
     }
 }

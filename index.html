@@ -13,19 +13,28 @@
 
 
     <div class="container">
-        <img class="tesla" class="img_tesla" src="./img/tesla.png" alt="">
-        <img class="wheels_tesla animation_wheels" width="117" height="117" src="./img/whells_tesla.png" alt="">
-        <img class="wheels_tesla2 animation_wheels" width="117" height="117" src="./img/whells_tesla.png" alt="">
+        <div class="tesla_block">
+            <img class="tesla" class="img_tesla" src="./img/tesla.png" alt="">
+            <img class="wheels_tesla animation_wheels" width="117" height="117" src="./img/whells_tesla.png" alt="">
+            <img class="wheels_tesla2 animation_wheels" width="117" height="117" src="./img/whells_tesla.png" alt="">
+
+            <div class="photo">
+                <div class="baxtzod">
+                    <img width="117" height="117" class="wheels_tesla_first animation_wheels2" id="photo_macbook2" src="./img/whells_tesla.png" alt="">
+                    <img width="117" height="117" class="wheels_tesla2_second animation_wheels2" id="photo_macbook" src="./img/whells_tesla.png" alt="">
+                </div>
+            </div>
+        </div>
 
         <div class="texts">
             <div class="block">
                 <p class="first_p_text">Запас хода</p>
-                <h1 class="h1_first_text">750км</h1>
+                <h1 id="battery" class="h1_first_text">750км</h1>
             </div>
 
             <div class="block2">
                 <p class="second_p_text">Цена</p>
-                <h1 class="h1_second_text">$89, 990</h1>
+                <h1 class="h1_second_text" id="price">$89, 990</h1>
             </div>
         </div>
 
@@ -35,10 +44,10 @@
             <div class="block_display">
                 <p>Скорость автомобиля</p>
                 <div class="difficult_code">
-                    <h1 class="h1_block_display"><span id="count_animation">60</span>км/ч</h1>
+                    <h1 id="speed" class="h1_block_display">60км/ч</h1>
                     <div class="flex_arrow">
-                        <img onclick="increaseCount()" width="22" height="22" src="./img/arrow_up.png" alt="">
-                        <img onclick="decreaseCount()" width="22" height="22" src="./img/arrow_down.png" alt="">
+                        <img id="img" width="22" height="22" src="./img/arrow_up.png" alt="">
+                        <img id="img2" width="22" height="22" src="./img/arrow_down.png" alt="">
                     </div>
                 </div>
 
@@ -53,16 +62,17 @@
                         <img onclick="decCount()" width="22" height="22" src="./img/arrow_down.png" alt="">
                     </div>
                 </div>
-
             </div>
 
             <div class="block_display3">
                 <p>Диски</p>
                 <div class="difficult_code3">
-                    <h1 class="h1_block_display3" id="count_animation3" class="color_text">19</h1>
+                    <h1 class="h1_block_display3" id="color_name" class="color_text">19</h1>
                     <div class="flex_arrow">
-                        <img onclick="incementCount()" class="btn_blue" id="white" width="22" height="22" src="./img/arrow_up.png" alt="">
-                        <img onclick="decrementCount()" class="btn_blue" id="space_grey" width="22" height="22" src="./img/arrow_down.png" alt="">
+                        <img onclick="incementCount()" class="btn_blue" id="white" width="22" height="22"
+                            src="./img/arrow_up.png" alt="">
+                        <img onclick="decrementCount()" class="btn_blue" id="space_grey" width="22" height="22"
+                            src="./img/arrow_down.png" alt="">
                     </div>
                 </div>
 
@@ -74,7 +84,7 @@
                 <div class="flex_checkbox">
                     <p class="p_text_checkbox">Кондиционер</p>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="toggleSwitch">
                         <span class="slider"></span>
                     </label>
                 </div>
@@ -82,7 +92,7 @@
 
                 <div class="flex_checkbox">
                     <p class="p_text_checkbox">Версия Long Range</p>
-                    <label class="switch">
+                    <label class="switch" id="toogle_price">
                         <input type="checkbox">
                         <span class="slider"></span>
                     </label>
@@ -96,49 +106,64 @@
                         <span class="slider"></span>
                     </label>
                 </div>
-
             </div>
 
         </div>
 
 
-       <!--  <button data-open>open modal</button> -->
+        <!--  <button data-open>open modal</button> -->
 
         <div data-close class="modal_bg anim">
             <div class="modal">
                 <div class="top">
-                    <img class="photo_modal" width="1240" height="697" src="./img/tesla_car_dealership.png" alt="">
+                    <img id="big_photo" class="photo_modal" width="1240" height="697"
+                        src="./img/tesla_car_dealership.png" alt="">
 
-                    <div class="texts">
-                        <div class="block">
-                            <p class="first_p_text">Запас хода</p>
-                            <h1 class="h1_first_text">750км</h1>
-                        </div>
-            
+                    <div class="texts2">
                         <div class="block2">
-                            <p class="second_p_text">Цена</p>
-                            <h1 class="h1_second_text">$89, 990</h1>
+                            <p class="first_p_text2">Запас хода</p>
+                            <h1 class="h1_first_text2">750км</h1>
+                        </div>
+
+                        <div class="block2_2">
+                            <p class="second_p_text2">Цена</p>
+                            <h1 class="h1_second_text2">$89, 990</h1>
                         </div>
                     </div>
 
-                    <!-- <button data-close>x</button> -->
+                    <div class="flex">
+                        <div class="colors">
+                            <p class="colors_text">Цвет салона</p>
+                            <div class="photo_colors">
+                                <div class="dots">
+                                    <img data-img class="dots_effect2" id="black" width="35" height="35"
+                                        src="./img/dots2.jpg" alt="">
+                                    <img data-img class="dots_effect3" id="white_dealership" width="35" height="35"
+                                        src="./img/dots3.jpg" alt="">
+                                    <img data-img class="dots_effect1" id="natural" width="35" height="35"
+                                        src="./img/dots1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-checkbox">
+                            <p class="p_text_checkbox">Вид автомобиля</p>
+                            <label class="switch" data-close>
+                                <input type="checkbox" data-close>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
 
-       
-
-        <!-- <div class="photo">
-            <img width="115" height="115" id="photo_macbook" src="./img/tesla_wheels_2.png" alt="">
-            <img width="115" height="115" id="photo_macbook2" src="./img/tesla_wheels_2.png" alt="">
-            <div class="text_macbook">
-   
-            </div>
-        </div> -->
-
+        <!-- <button data-close>x</button> -->
 
     </div>
-
 
     <script src="script.js"></script>
 </body>
